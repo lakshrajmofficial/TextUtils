@@ -4,14 +4,14 @@ export default function About(props) {
     
     const [myStyle, setMyStyle] = useState({
         color: props.mode === "light" ? 'black' : 'white',
-        backgroundColor: props.mode === "light" ? 'white' : 'grey',
+        backgroundColor: props.mode === "light" ? 'white' : '#031a3b',
         border: props.mode === "light" ? '1px solid white' : '1px solid black'
     })
 
     useEffect(() => {
         setMyStyle({
             color: props.mode === "light" ? 'black' : 'white',
-            backgroundColor: props.mode === "light" ? 'white' : 'grey',
+            backgroundColor: props.mode === "light" ? 'white' : '#031a3b',
             border: props.mode === "light" ? '1px solid white' : '1px solid black' 
         })
     },[props])

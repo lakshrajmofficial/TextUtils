@@ -5,11 +5,6 @@
         "type":"link"
     },
     {
-        "text":"Search",
-        "link":"/",
-        "type":"search"
-    },
-    {
     "text":"Enable Dark Mode",
     "link":"/",
     "type":"switch"

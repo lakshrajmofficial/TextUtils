@@ -1,5 +1,4 @@
 import React from 'react'
-
 import NavbarItem from './NavbarItem';
 import NavbarDropDown from './NavbarDropDown';
 import NavBarSearchBar from './NavbarSearchBar';
@@ -9,7 +8,7 @@ export default function Navbar(props){
 
     return(
         <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
-        <div className="container-fluid">
+        <div className="container-fluid"> 
           <a className="navbar-brand" href="/">{props.title}</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -35,7 +34,7 @@ export default function Navbar(props){
             htmlEle.push(<NavbarDropDown text={element.text} items={element.items}/>);
           }else if(element.type === "search"){
             htmlEle.push(<NavBarSearchBar text={element.text}/>) ; 
-          }else if(element.type == "switch"){
+          }else if(element.type === "switch"){
             htmlEle.push(<NavbarSwitch text={element.text} mode={props.mode} toggleMode={props.toggleMode}/>)
           }
         });

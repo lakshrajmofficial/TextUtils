@@ -1,12 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 
 export default function NavbarDropDown(props){
     return(
         <li class="nav-item dropdown">
-          <Link class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             {props.text}
-          </Link>
+          </a>
           <ul class="dropdown-menu">
             {renderDropDownItems(props.items)}
           </ul>
@@ -16,7 +15,7 @@ export default function NavbarDropDown(props){
     function renderDropDownItems(items){
         let htmlEle = []
         props.items.forEach(item => {
-            htmlEle.push(<li><Link className='dropdown-item' to={item.link}>{item.text}</Link></li>);       
+            htmlEle.push(<li><a className='dropdown-item' href={item.link}>{item.text}</a></li>);       
         });
         return htmlEle;
     }

@@ -5,17 +5,6 @@
         "type":"link"
     },
     {
-        "text":"About Us",
-        "link":"/about",
-        "type":"link"
-    },
-    {
-        "text":"About Us",
-        "link":"/",
-        "type":"dropdown",
-        "items":[{"text":"First Link","link":"/"},{"text":"Second Link","link":"/"}]
-    },
-    {
         "text":"Search",
         "link":"/",
         "type":"search"

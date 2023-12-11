@@ -4,10 +4,10 @@ import TextForm from "./components/Text Form Component/TextForm";
 import About from './components/About Component/About';
 import navbarPropsData from './JsonConfigs/navbarJSONConfig.json';
 import AlertComponent from './components/Alert Component/AlertComponent';
-import {
+/* import {
   Routes,
   Route
-} from "react-router-dom";
+} from "react-router-dom"; */
 
 function App() {
 
@@ -29,17 +29,17 @@ function App() {
       <Navbar title="TextUtils" navbarProps={navbarProps} toggleMode={toggleMode} mode={mode} setAlertMessage={setAlertMessage}/>
       <AlertComponent alert={alert}/>
 
-      <Routes>
+{/*       <Routes>
         <Route path='/' element={<TextForm label="Text Area" mode={mode} setAlertMessage={setAlertMessage}/>}/>
         <Route path='/about' element={<About mode={mode} setAlertMessage={setAlertMessage}/>}/>
-      </Routes>
+      </Routes> */}
 
-      {/* <div className="container my-3">
+      <div className="container my-3">
         <TextForm label="Text Area" mode={mode} setAlertMessage={setAlertMessage}/>
-      </div> */}
-      {/* <div className="container my-5">
+      </div>
+      <div className="container my-5">
       <About mode={mode} setAlertMessage={setAlertMessage}/>
-      </div> */}
+      </div>
       
    </>
   );

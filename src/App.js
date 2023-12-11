@@ -37,9 +37,9 @@ function App() {
       <div className="container my-3">
         <TextForm label="Text Area" mode={mode} setAlertMessage={setAlertMessage}/>
       </div>
-      /*<div className="container my-5">
+      {/*<div className="container my-5">
       <About mode={mode} setAlertMessage={setAlertMessage}/>
-      </div>*/
+      </div>*/}
       
    </>
   );

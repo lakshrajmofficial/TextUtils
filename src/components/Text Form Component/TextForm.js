@@ -10,7 +10,7 @@ export default function TextForm(props) {
           <div className="mb-3">
               <textarea placeholder='Enter Text Here' className="form-control" id="myBox" rows="8" value={text} onChange={ (e) => setText(e.target.value)} style={{backgroundColor: props.mode === 'dark' ? '#031a3b' : 'white', color: props.mode === 'dark' ? 'white' : 'black'}}></textarea>
           </div>
-          <div className"d-sm-block">
+          <div className="d-sm-block">
               <button className="btn btn-primary " onClick={clearTextClick.bind(this)}>Clear Text</button>
               <button className="btn btn-primary mx-3 my-3" onClick={toUpperCaseClick.bind(this)}>To Upper Case</button>
               <button className="btn btn-primary" onClick={toLowerCaseClick.bind(this)}>To Lower Case</button>

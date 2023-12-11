@@ -30,7 +30,7 @@ export default function TextForm(props) {
               <ul>
                 {email && email.map((emailsList,i) => {
                     return(
-                      emailsList.map(ele => {
+                     emailsList && emailsList.map(ele => {
                         return(
                           <li>{ele}</li>
                         )
